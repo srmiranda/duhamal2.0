@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  root "games#index"
+  root "events#new"
 
-  resources :games, only: [:index, :show]
+  resources :events, only: [:index, :create, :new, :show]
 end

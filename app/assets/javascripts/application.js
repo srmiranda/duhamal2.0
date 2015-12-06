@@ -19,7 +19,7 @@ $(document).ready(function() {
   $('#netOptions').hide();
   $('#cutOptions').hide();
 
-  $("input[name='scoringType']").click(function() {
+  $("input[name='scoreType']").click(function() {
      if($(this).attr('value') == 'net') {
           $('#netOptions').show();
      }
@@ -28,7 +28,7 @@ $(document).ready(function() {
      }
   });
 
-  $("input[name='useCuts']").click(function() {
+  $("input[name='cut']").click(function() {
      if($(this).attr('value') == 'yes') {
           $('#cutOptions').show();
      }
@@ -38,7 +38,7 @@ $(document).ready(function() {
   });
 
   $(function(){
-    var $select = $(".1-100");
+    var $select = $(".handicap");
     for (i=1;i<=100;i++){
         $select.append($('<option></option>').val(i).html(i))
     }

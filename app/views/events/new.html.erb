@@ -9,10 +9,10 @@
         <input class="input-field" type="text" name="name" maxlength="30">
 
         <label>Start Date</label>
-        <input type="date" name="startDate">
+        <input type="date" name="startDate" placeholder="mm/dd/year">
 
         <label>End Date</label>
-        <input type="date" name="endDate">
+        <input type="date" name="endDate" placeholder="mm/dd/year">
 
         <label>Number of Players</label>
         <select name="players">
@@ -24,56 +24,56 @@
         </select>
         <div class="row">
           <div class="left">
-        <label>Scoring Type</label>
-        <input type="radio" name="scoreType" id="gross" value="gross"><label for="gross">Gross</label>
-        <input type="radio" name="scoreType" id="net" value="net"><label for="net">Net</label>
-          <div id="netOptions">
-            <label>Handicap</label>
-            <select class="handicap"></select>
-            <label>Dot Cards</label>
-            <select name="dotCard">
-              <option value=""></option>
-              <option value="yes">Yes</option>
-              <option value="no">No</option>
-            </select>
+            <label>Scoring Type</label>
+            <input type="radio" name="scoreType" id="gross" value="gross"><label for="gross">Gross</label>
+            <input type="radio" name="scoreType" id="net" value="net"><label for="net">Net</label>
+            <div id="netOptions">
+              <label>Handicap</label>
+              <select class="handicap"></select>
+              <label>Dot Cards</label>
+              <select name="dotCard">
+                <option value=""></option>
+                <option value="yes">Yes</option>
+                <option value="no">No</option>
+              </select>
+            </div>
+          </div>
+          <div class="right">
+            <label>Use Flights</label>
+            <input type="radio" name="flights" id="flightYes" value="yes"><label for="flightYes">Yes</label>
+            <input type="radio" name="flights" id="flightNo" value="no"><label for="flightNo">No</label>
           </div>
         </div>
-        <div class="right">
-        <label>Use Flights</label>
-        <input type="radio" name="flights" id="flightYes" value="yes"><label for="flightYes">Yes</label>
-        <input type="radio" name="flights" id="flightNo" value="no"><label for="flightNo">No</label>
-      </div>
-    </div>
-    <hr />
-    <div class="row">
-      <div class="left">
-        <label>Use Cuts</label>
-        <input type="radio" name="cut" id="cutYes" value="yes"><label for="cutYes">Yes</label>
-        <input type="radio" name="cut" id="cutNo" value="no"><label for="cutNo">No</label>
+        <hr />
+        <div class="row">
+          <div class="left">
+            <label>Use Cuts</label>
+            <input type="radio" name="cut" id="cutYes" value="yes"><label for="cutYes">Yes</label>
+            <input type="radio" name="cut" id="cutNo" value="no"><label for="cutNo">No</label>
 
-          <div id="cutOptions">
-            <label>Include Ties</label>
-            <select name="includeTies">
-              <option value=""></option>
-              <option value="yes">Yes</option>
-              <option value="no">No</option>
-            </select>
-            <label>Include Ten From Lead</label>
-            <select name="includeTen">
-              <option value=""></option>
-              <option value="yes">Yes</option>
-              <option value="no">No</option>
-            </select>
+              <div id="cutOptions">
+                <label>Include Ties</label>
+                <select name="includeTies">
+                  <option value=""></option>
+                  <option value="yes">Yes</option>
+                  <option value="no">No</option>
+                </select>
+                <label>Include Ten From Lead</label>
+                <select name="includeTen">
+                  <option value=""></option>
+                  <option value="yes">Yes</option>
+                  <option value="no">No</option>
+                </select>
+              </div>
+            </div>
+            <div class="right">
+
+            <label>Club Hometown</label>
+            <input type="radio" name="hometown" id="useName" value="clubName"><label for="useName">Use Club Name</label><br>
+            <input type="radio" name="hometown" id="useHome" value="hometown"><label for="useHome">Use Hometown</label>
           </div>
         </div>
-        <div class="right">
-
-        <label>Club Hometown</label>
-        <input type="radio" name="hometown" id="useName" value="clubName"><label for="useName">Use Club Name</label><br>
-        <input type="radio" name="hometown" id="useHome" value="hometown"><label for="useHome">Use Hometown</label>
-      </div>
-    </div>
-    <hr />
+        <hr />
 
         <input class="button expand" type="submit" value="Submit">
 

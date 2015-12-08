@@ -4,16 +4,16 @@
   </h1>
   <h4 class="text-center"><%= @event.name %></h3>
   <div class="row">
-    <div class="left">
+    <div class="left small-6">
       <h6>Start Date: <%= @event.startDate %></h4>
     </div>
-    <div class="right">
+    <div class="right small-6">
       <h6>End Date: <%= @event.endDate %></h4>
     </div>
   </div>
   <hr />
   <div class="row">
-    <div class="left">
+    <div class="left small-6">
       <h5>Players: <%= @event.players %></h4>
       <h5>Score Type: <%= @event.scoreType %></h4>
       <% if @event.scoreType == "net" %>
@@ -21,7 +21,7 @@
         <h5>Dot Card: <%= @event.dotCard %></h4>
       <% end %>
     </div>
-    <div class="right">
+    <div class="right small-6">
       <h5>Use Flights: <%= @event.flights %></h4>
       <h5>Use Cut: <%= @event.cut %></h4>
       <% if @event.cut == "yes" %></h4>

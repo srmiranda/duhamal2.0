@@ -1,6 +1,6 @@
 <div class="container">
   <div class="large-6 small-12 small-centered columns form">
-    <form class="smart-green" name="eventForm" action="<%= events_path %>" onsubmit="return validateForm()" method="post">
+    <form class="form-green" name="eventForm" action="<%= events_path %>" onsubmit="return validateForm()" method="post">
       <%= token_tag %>
       <h1>Create Your Event
           <span>Please make a selection in each of the fields.</span>
@@ -29,7 +29,7 @@
             <input type="radio" name="scoreType" id="net" value="net"><label for="net">Net</label>
             <div id="netOptions">
               <label>Handicap</label>
-              <select class="handicap"></select>
+              <select class="handicap" name="handicap"></select>
               <label>Dot Cards</label>
               <select name="dotCard">
                 <option value=""></option>

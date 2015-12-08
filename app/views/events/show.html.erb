@@ -1,2 +1,34 @@
-<h1>Event Created<h1>
-<h3><%= @event.name %></h3> 
+<div class="large-6 small-12 small-centered columns form-green">
+  <h1>Event Created
+    <span>Make sure all your preferences are correct.</span>
+  </h1>
+  <h4 class="text-center"><%= @event.name %></h3>
+  <div class="row">
+    <div class="left">
+      <h6>Start Date: <%= @event.startDate %></h4>
+    </div>
+    <div class="right">
+      <h6>End Date: <%= @event.endDate %></h4>
+    </div>
+  </div>
+  <hr />
+  <div class="row">
+    <div class="left">
+      <h5>Players: <%= @event.players %></h4>
+      <h5>Score Type: <%= @event.scoreType %></h4>
+      <% if @event.scoreType == "net" %>
+        <h5>Handicap: <%= @event.handicap %></h4>
+        <h5>Dot Card: <%= @event.dotCard %></h4>
+      <% end %>
+    </div>
+    <div class="right">
+      <h5>Use Flights: <%= @event.flights %></h4>
+      <h5>Use Cut: <%= @event.cut %></h4>
+      <% if @event.cut == "yes" %></h4>
+        <h5>Include Ties: <%= @event.includeTies %></h4>
+        <h5>Include Ten From Lead: <%= @event.includeTen %></h4>
+      <% end %>
+    </div>
+  </div>
+  <h5 class="text-center">Club Hometown: <%= @event.hometown %></h4>
+</div>

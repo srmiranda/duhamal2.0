@@ -16,7 +16,7 @@
 
  */
 
- .smart-green {
+ .form-green {
      margin-left:auto;
      margin-right:auto;
      border: 1px solid black;
@@ -29,7 +29,7 @@
      -webkit-border-radius: 5px;
      -moz-border-radius: 5px;
  }
- .smart-green h1 {
+ .form-green h1 {
      font: 24px "Trebuchet MS", Arial, Helvetica, sans-serif;
      padding: 20px 0px 20px 40px;
      display: block;
@@ -43,22 +43,22 @@
      border-bottom:1px solid #89AF4C;
 
  }
- .smart-green h1>span {
+ .form-green h1>span {
      display: block;
      font-size: 11px;
      color: #FFF;
  }
 
- .smart-green label {
+ .form-green label {
      display: block;
      margin: 0px 0px 5px;
  }
- .smart-green label>span {
+ .form-green label>span {
      float: left;
      margin-top: 10px;
      color: #5E5E5E;
  }
- .smart-green input[type="text"], .smart-green input[type="email"], .smart-green textarea, .smart-green select {
+ .form-green input[type="text"], .form-green input[type="email"], .form-green textarea, .form-green select {
      color: #555;
      height: 30px;
      line-height:15px;
@@ -72,11 +72,11 @@
      box-shadow: inset 1px 1px 2px rgba(238, 238, 238, 0.2);
      font: normal 14px/14px Arial, Helvetica, sans-serif;
  }
- .smart-green textarea{
+ .form-green textarea{
      height:100px;
      padding-top: 10px;
  }
- .smart-green select {
+ .form-green select {
      background:  -moz-linear-gradient(top, #FBFBFB 0%, #E9E9E9 100%);
      background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#FBFBFB), color-stop(100%,#E9E9E9));
     appearance:none;
@@ -87,7 +87,7 @@
      width:100%;
      height:30px;
  }
- .smart-green .button {
+ .form-green .button {
      background-color: #9DC45F;
      border-radius: 5px;
      -webkit-border-radius: 5px;
@@ -97,7 +97,7 @@
      color: #FFF;
      text-shadow: 1px 1px 1px #949494;
  }
- .smart-green .button:hover {
+ .form-green .button:hover {
      background-color:#80A24A;
  }
 

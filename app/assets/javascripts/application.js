@@ -43,6 +43,7 @@ $(document).ready(function() {
         $select.append($('<option></option>').val(i).html(i))
     }
   });
+  
   function validateForm() {
     var x = document.forms["eventForm"]["name"].value;
     if (x == null || x == "") {
